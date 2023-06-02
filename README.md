@@ -49,7 +49,14 @@ while True:
 
 OUTPUT :
 
-![EX-2 IMPLEMENTATION OF STOP AND WAIT PROTOCOL](https://github.com/varshxnx/EX-2/assets/122253525/7c66d28c-a57c-4fc3-9173-0ee0272050d6)
+CLIENT:
+
+![Screenshot (96)](https://github.com/varshxnx/EX-2/assets/122253525/8a3fb41a-f19f-4819-95b4-2db8cb054690)
+
+
+SERVER:
+
+![Screenshot (97)](https://github.com/varshxnx/EX-2/assets/122253525/adeef748-5817-44bd-9c3c-def8bcb8069a)
 
 
 RESULT :
