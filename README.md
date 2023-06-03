@@ -1,19 +1,20 @@
-# EX-2 IMPLEMENTATION OF STOP AND WAIT PROTOCOL
+# EX-3 IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
 
-DATE: 16-03-2023
+DATE : 23-03-2023
 
 AIM :
 
-  To write a python program to perform stop and wait protocol
+  To write a python program to perform sliding window protocol
+
 
 ALGORITHM :
-  
+
 1. Start the program.
 2. Get the frame size from the user
 3. To create the frame based on the user request.
 4. To send frames to server from the client side.
-5. If your frames reach the server it will send ACK signal to client
-otherwise it will sendNACK signal to client.
+5. If your frames reach the server it will send ACK signal to client otherwise it
+will send NACKsignal to client.
 6. Stop the program
 
 PROGRAM :
@@ -25,16 +26,19 @@ s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
+size=int(input("Enter number of frames to send : "))
+l=list(range(size))
+s=int(input("Enter Window Size : "))
+st=0
+i=0
 while True:
- i=input("Enter a data: ")
- c.send(i.encode())
+ while(i<len(l)):
+ st+=s
+ c.send(str(l[i:st]).encode())
  ack=c.recv(1024).decode()
  if ack:
  print(ack)
- continue
- else:
- c.close()
- break
+ i+=s
  ```
  
 SERVER:
@@ -42,21 +46,18 @@ SERVER:
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
-while True:
+while True: 
  print(s.recv(1024).decode())
- s.send("Acknowledgement Recived".encode())
-```
+ s.send("acknowledgement recived from the server".encode()
+ ```
 
 OUTPUT :
 
-![Screenshot (94)](https://github.com/varshxnx/EX-2/assets/122253525/449ba8d2-57ee-493e-810b-0984dc35f442)
-![Screenshot (95)](https://github.com/varshxnx/EX-2/assets/122253525/77512036-bcaf-4a66-add2-b676bb19cc6e)
+![Screenshot (96)](https://github.com/varshxnx/EX-2/assets/122253525/6cb1df5c-ab59-4691-8e9a-c72f6635ef46)
+![Screenshot (97)](https://github.com/varshxnx/EX-2/assets/122253525/09e40c62-33bd-4098-9053-00c11c8354b0)
 
 
-RESULT :
+RESULT:
 
-Thus, python program to perform stop and wait protocol was successfully executed.
-
-
-
-
+  Thus, python program to perform stop and wait protocol was successfully executed.
+  
