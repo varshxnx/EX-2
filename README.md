@@ -49,8 +49,9 @@ while True:
 
 OUTPUT :
 
-![Screenshot (94)](https://github.com/varshxnx/EX-2/assets/122253525/17a7ad5a-152d-4950-a1c9-07c4b03e7dc8)
-![Screenshot (95)](https://github.com/varshxnx/EX-2/assets/122253525/8b3cc4a8-b52a-4dc9-9d21-d81a817a29a7)
+![Screenshot (94)](https://github.com/varshxnx/EX-2/assets/122253525/449ba8d2-57ee-493e-810b-0984dc35f442)
+![Screenshot (95)](https://github.com/varshxnx/EX-2/assets/122253525/77512036-bcaf-4a66-add2-b676bb19cc6e)
+
 
 RESULT :
 
