@@ -53,14 +53,7 @@ while True:
 
 OUTPUT :
 
-CLIENT 
-
-![Screenshot (96)](https://github.com/varshxnx/EX-2/assets/122253525/e917628f-99db-42cf-9b2c-0d7fbb32aabc)
-
-
-SERVER
-
-![Screenshot (97)](https://github.com/varshxnx/EX-2/assets/122253525/8c98566e-7305-4772-931c-de10363e1595)
+![ex2](https://github.com/varshxnx/EX-2/assets/122253525/b9a596ec-55b3-4e8b-a9ae-87e5544311f4)
 
 
 RESULT:
